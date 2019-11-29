@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<script type="text/javascript" src="http://unpkg.com/brain.js@1.1.2/browser.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+<script src="helper_files.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Dashboard - Javascript</title>
+</head>
+
+<body>
+    <!-- insert goodies here -->
+
+    <div class="parent">
+      <div id='dataTable' class="child"><div class="loader" id="loader"></div>Data Table</div>
+    <!-- <div id="chart" class="child">Stinky 3</div> --> 
+      <canvas id="dataChart" class="child" ><div class="loader" id="loader"></div>Chart</div>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+
+const mypromise = new Promise (
+  function(resolve, reject) {
+    return(func1())
+  })//end promise
+
+/*
+func1()
+  .then((data) => {
+    alert("hey: " + data)
+  })
+/*
+(
+  async function(){
+    const message = await func1();
+    console.log("And the message is: " ,message);
+})();
+*/
+/*
+async function stinky() {
+  try {
+    const result = await loadData();
+    console.log("result: ", result);
+    return result;
+  }
+  catch(err){
+    console.log("Error: ", err );
+  }
+}//end stinky
+
+  stinky();
+*/
+</script>
+</html>
