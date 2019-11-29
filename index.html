@@ -6,10 +6,18 @@
 <script type="text/javascript" src="http://unpkg.com/brain.js@1.1.2/browser.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+<!-- Table Data -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+<!-- Chart Data-->
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+<!-- Custom Code-->
 <script src="helper_files.js"></script>
 <link rel="stylesheet" type="text/css" href="styles.css">
+
 <title>Dashboard - Javascript</title>
 </head>
 
@@ -17,8 +25,9 @@
     <!-- insert goodies here -->
 
     <div class="parent">
-      <div id='dataTable' class="child"><div class="loader" id="loader"></div>Data Table</div>
-    <!-- <div id="chart" class="child">Stinky 3</div> --> 
+    <!--  <div id='dataTable' class="child"><div class="loader" id="loader"></div>Data Table</div> -->
+      <div class="child"><table id="example" class="display" width="100%"><div class="loader" id="loader"></div></table></div>
+      <!-- <div id="chart" class="child">Stinky 3</div> --> 
       <canvas id="dataChart" class="child" ><div class="loader" id="loader"></div>Chart</div>
     </div>
 
